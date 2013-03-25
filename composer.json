@@ -1,0 +1,23 @@
+{
+    "name": "remithomas/rt-headtitle",
+    "description": "ZF2 Plugin to set title easier to your pages",
+    "type": "plugin",
+    "keywords": [
+        "zf2","title"
+    ],
+    "homepage": "https://github.com/remithomas/rt-headtitle",
+    "authors": [
+        {
+            "name": "Remi THOMAS",
+            "email": "remi.thomas@yahoo.fr",
+            "homepage": "http://remithomas.fr/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zend-eventmanager": "2.1.*",
+        "zendframework/zend-loader": "2.1.*",
+        "zendframework/zend-modulemanager": "2.1.*",
+        "zendframework/zend-mvc": "2.1.*"
+    }
+}
