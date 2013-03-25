@@ -1,7 +1,7 @@
 {
     "name": "remithomas/rt-headtitle",
-    "description": "ZF2 Plugin to set title easier to your pages",
-    "type": "plugin",
+    "description": "ZF2 Plugin to set title easily to your pages",
+    "type": "library",
     "keywords": [
         "zf2","title"
     ],
