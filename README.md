@@ -5,18 +5,30 @@ ZF2 HeadTitle plugin
 
 With this plugin you can easily set title from yours controllers
 
-How to use ?
+How to install ?
 ============
+Using composer.json
 
-Layout.phtml
 ```
-<html lang="en">
-    <head>
-      <?php echo $this->headTitle(); ?>
-    </head>
-    <body>content</body>
-</html>
+{
+    "name": "zendframework/skeleton-application",
+    "description": "Skeleton Application for ZF2",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "zf2"
+    ],
+    "minimum-stability": "dev",
+    "homepage": "http://framework.zend.com/",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "dev-master",
+        "remithomas/rt-headtitle": "dev-master"
+    }
+}
 ```
+
+Activate the module :
 
 application.config.php
 ```
@@ -28,6 +40,19 @@ return array(
     )
 );
 ?>
+```
+
+How to use ?
+============
+
+Layout.phtml
+```
+<html lang="en">
+    <head>
+      <?php echo $this->headTitle(); ?>
+    </head>
+    <body>content</body>
+</html>
 ```
 
 in your own module config (module.config.php)
