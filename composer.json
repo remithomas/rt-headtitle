@@ -1,9 +1,9 @@
 {
     "name": "remithomas/rt-headtitle",
-    "description": "ZF2 Plugin to set title easily to your pages",
+    "description": "ZF2 Plugin to set title easily to your pages from controllers actions",
     "type": "library",
     "keywords": [
-        "zf2","title"
+        "zf2","title","headtitle"
     ],
     "homepage": "https://github.com/remithomas/rt-headtitle",
     "authors": [
@@ -16,7 +16,6 @@
     "require": {
         "php": ">=5.3.3",
         "zendframework/zend-eventmanager": "2.*",
-        "zendframework/zend-loader": "2.*",
         "zendframework/zend-modulemanager": "2.*",
         "zendframework/zend-mvc": "2.*"
     },
