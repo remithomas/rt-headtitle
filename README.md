@@ -3,6 +3,11 @@ rt-headtitle
 
 ZF2 HeadTitle plugin, you can easily set any title within yours controllers actions
 
+Features / Goals
+============
+
+* Set and manage your titles from controllers actions
+
 How to install ?
 ============
 ### Using composer.json
