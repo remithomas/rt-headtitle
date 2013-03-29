@@ -5,7 +5,7 @@ ZF2 HeadTitle plugin, you can easily set any title within yours controllers acti
 
 How to install ?
 ============
-Using composer.json
+### Using composer.json
 
 ```
 {
@@ -26,7 +26,7 @@ Using composer.json
 }
 ```
 
-Activate the module :
+### Activate the module :
 
 application.config.php
 ```
@@ -43,6 +43,7 @@ return array(
 How to use ?
 ============
 
+### Only activated in one module
 If you need to use this plugin **only in one module**. Just copy this code and add it into your own module config (module.config.php)
 ```
 <?php
@@ -54,11 +55,10 @@ return array(
     ),
     ...
 ```
-
+### Activated for all the application
 If you need to use this plugin **in all your application**. Just copy the file [rt-headtitle.global.php.dist](https://github.com/remithomas/rt-headtitle/blob/master/config/rt-headtitle.global.php.dist) (/vendor/remithomas/rt-headtitle/config/) and paste it into the folder **/config/autoload/**
-**Don't forget to remove the extension ".dist"**
 
-Layout.phtml
+### Change your Layout.phtml
 ```
 <html lang="en">
     <head>
@@ -69,8 +69,7 @@ Layout.phtml
 ```
 
 
-
-In your controller action !
+### How to use in your controller action !
 ```
 public function indexAction(){
     $this->headTitle("My website")->setSeparator(" - ")->append("easy ?!");
