@@ -7,7 +7,7 @@ How to install ?
 ============
 ### Using composer.json
 
-```
+```json
 {
     "name": "zendframework/skeleton-application",
     "description": "Skeleton Application for ZF2",
@@ -29,7 +29,7 @@ How to install ?
 ### Activate the module :
 
 application.config.php
-```
+```php
 <?php
 return array(
     'modules' => array(
@@ -40,12 +40,10 @@ return array(
 ?>
 ```
 
-How to use ?
-============
 
 ### Only activated in one module
 If you need to use this plugin **only in one module**. Just copy this code and add it into your own module config (module.config.php)
-```
+```php
 <?php
 return array(
     'controller_plugins' => array(
@@ -59,7 +57,7 @@ return array(
 If you need to use this plugin **in all your application**. Just copy the file [rt-headtitle.global.php.dist](https://github.com/remithomas/rt-headtitle/blob/master/config/rt-headtitle.global.php.dist) (/vendor/remithomas/rt-headtitle/config/) and paste it into the folder **/config/autoload/**
 
 ### Change your Layout.phtml
-```
+```php
 <html lang="en">
     <head>
       <?php echo $this->headTitle(); ?>
@@ -68,9 +66,11 @@ If you need to use this plugin **in all your application**. Just copy the file [
 </html>
 ```
 
+How to use ?
+============
 
 ### How to use in your controller action !
-```
+```php
 public function indexAction(){
     $this->headTitle("My website")->setSeparator(" - ")->append("easy ?!");
     return new ViewModel();
