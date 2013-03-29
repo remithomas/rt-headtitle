@@ -43,17 +43,7 @@ return array(
 How to use ?
 ============
 
-Layout.phtml
-```
-<html lang="en">
-    <head>
-      <?php echo $this->headTitle(); ?>
-    </head>
-    <body>content</body>
-</html>
-```
-
-in your own module config (module.config.php)
+If you need to use this plugin **only in one module**. Just copy this code and add it into your own module config (module.config.php)
 ```
 <?php
 return array(
@@ -64,6 +54,21 @@ return array(
     ),
     ...
 ```
+
+If you need to use this plugin **in all your application**. Just copy the file [rt-headtitle.global.php.dist](https://github.com/remithomas/rt-headtitle/blob/master/config/rt-headtitle.global.php.dist) (/vendor/remithomas/rt-headtitle/config/) and paste it into the folder **/config/autoload/**
+**Don't forget to remove the extension ".dist"**
+
+Layout.phtml
+```
+<html lang="en">
+    <head>
+      <?php echo $this->headTitle(); ?>
+    </head>
+    <body>content</body>
+</html>
+```
+
+
 
 In your controller action !
 ```
